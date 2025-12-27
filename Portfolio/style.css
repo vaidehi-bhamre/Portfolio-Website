@@ -19,7 +19,7 @@
 
       For more colors visit: https://htmlcolorcodes.com/
   */
-  --hue: 358;
+  --hue: 15;
   --first-color: hsl(var(--hue), 80%, 64%);
   --first-color-alt: hsl(var(--hue), 80%, 44%);
   --white-color: hsl(var(--hue), 8%, 92%);
