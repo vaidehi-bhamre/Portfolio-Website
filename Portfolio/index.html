@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!---------------Header-------------------->
+    <header class="header shadow-header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Vaidehi</a>
+        <div class="nav_menu" id="nav_menu">
+          <ul class="nav_list">
+            <li>
+              <a href="#home" class="nav_links active-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav_links">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav_links">Projects</a>
+            </li>
+            <li>
+              <a href="#resume" class="nav_links">Resume</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav_links">Contact</a>
+            </li>
+          </ul>
+          <!---------------Close Button-------------------->
+          <div class="nav_close" id="nav_close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+        <!---------------Toggle Menu-------------------->
+        <div class="nav_toggle" id="nav_toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!---------------Main-------------------->
+    <main class="main">
+      <!--------------------Home--------------------->
+      <section class="home_section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content">
+            <div class="home_image">
+              <img
+                src="assets /image.jpg"
+                alt="profile image"
+                class="home_img"
+              />
+            </div>
+            <div class="home_social">
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="home_link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vaidehi-bhamre-999774371/"
+                target="_blank"
+                class="home_link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home_data grid">
+            <p class="home_subtitle">
+              Hi, I'm a <span id="home_typed">Web Developer</span>
+            </p>
+            <h1 class="home_title">Vaidehi Bhamre</h1>
+            <p class="home_description">
+              Computer Science student and web developer passionate about
+              building modern, responsive websites and uncovering insights
+              through data analytics. Transforming ideas into digital
+              experiences with code and creativity.
+            </p>
+            <div class="home_buttons">
+              <a
+                href="assets /Vaidehi Resume .pdf"
+                download=""
+                target="_blank"
+                class="button"
+                >Downlaod CV</a
+              >
+              <a href="#projects" class="button button_ghost">Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------About--------------------->
+      <section class="about_section" id="about">
+        <div class="about_container container grid">
+          <div class="about_content">
+            <div class="about_data">
+              <h2 class="section_title">About Me</h2>
+              <p class="about_description">
+                I am a web developer and designer specializing in creating
+                modern, functional, and visually appealing websites. I combine
+                creativity and functionality to transform ideas into intuitive
+                interfaces, balancing design, usability, and quality code.
+              </p>
+              <a href="#contact" class="button button_ghost">Contact Me</a>
+            </div>
+
+            <div class="about_skills">
+              <h3 class="about_subtitle">
+                <i class="ri-bookmark-3-fill"></i>
+                <span>Skills</span>
+              </h3>
+
+              <ul class="about_items">
+                <li class="about_item">HTML</li>
+                <li class="about_item">CSS</li>
+                <li class="about_item">Javascript</li>
+                <li class="about_item">React</li>
+                <li class="about_item">Node.js</li>
+                <li class="about_item">Express</li>
+                <li class="about_item">EJS</li>
+                <li class="about_item">Git</li>
+                <li class="about_item">GitHub</li>
+                <li class="about_item">MySQL</li>
+                <li class="about_item">MongoDB</li>
+                <li class="about_item">Excel</li>
+                <li class="about_item">PowerBI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about_image">
+            <img src="assets /profile.JPG" alt="" class="about_img" />
+          </div>
+        </div>
+      </section>
+
+      <!--------------------Projects--------------------->
+      <section class="project_section" id="projects">
+        <h2 class="section_title">Projects</h2>
+        <div class="projects_container container grid">
+          <!-- Project 1: Stock Trading Platform -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">Stock Trading Platform</h3>
+              <p class="projects_description">
+                Real-time trading interface with live market data visualization,
+                user authentication, and transaction management.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">React</span>
+                <span class="project_tag">Node.js</span>
+                <span class="project_tag">MongoDB</span>
+                <span class="project_tag">Express</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 2: Video Conferencing Platform -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">Video Conferencing Platform</h3>
+              <p class="projects_description">
+                WebRTC-based solution supporting multiple participants with
+                real-time chat and screen sharing capabilities.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">WebRTC</span>
+                <span class="project_tag">Node.js</span>
+                <span class="project_tag">Socket.io</span>
+                <span class="project_tag">JavaScript</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 3: SigmaGPT with OpenAI APIs -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">SigmaGPT with OpenAI APIs</h3>
+              <p class="projects_description">
+                AI-powered chatbot leveraging OpenAI's GPT API with secure
+                handling and intelligent conversation management.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">OpenAI API</span>
+                <span class="project_tag">Node.js</span>
+                <span class="project_tag">Express</span>
+                <span class="project_tag">React</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 4: Drowsy Driver Detection System -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">Drowsy Driver Detection</h3>
+              <p class="projects_description">
+                CNN-based real-time safety system achieving 88.4% accuracy using
+                facial landmark detection with Flask interface.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">Python</span>
+                <span class="project_tag">CNN</span>
+                <span class="project_tag">OpenCV</span>
+                <span class="project_tag">Flask</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 5: Weather Streaming Dashboard -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">Weather Streaming Dashboard</h3>
+              <p class="projects_description">
+                Real-time monitoring system using Kafka streaming for live
+                visualization with dynamic temperature alerts.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">Python</span>
+                <span class="project_tag">Kafka</span>
+                <span class="project_tag">Streamlit</span>
+                <span class="project_tag">API</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre/Weather-Streaming-System"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 6: Medical Image Analysis System -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">Medical Image Analysis</h3>
+              <p class="projects_description">
+                Distributed MapReduce pipeline analyzing 5,000+ chest X-rays to
+                identify disease patterns through parallel computing.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">Python</span>
+                <span class="project_tag">MapReduce</span>
+                <span class="project_tag">OpenCV</span>
+                <span class="project_tag">NumPy</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre/Medical-Image-Analysis-System"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 7: Portfolio Website -->
+          <article class="projects_card">
+            <div class="projects_data">
+              <h3 class="projects_title">Portfolio Website</h3>
+              <p class="projects_description">
+                Fully responsive personal portfolio with smooth animations,
+                mobile-first design, and intuitive user interface.
+              </p>
+              <div class="projects_tags">
+                <span class="project_tag">HTML</span>
+                <span class="project_tag">CSS</span>
+                <span class="project_tag">JavaScript</span>
+              </div>
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="button button_ghost"
+                >View Project</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--------------------Resume--------------------->
+      <section class="resume_section" id="resume">
+        <h2 class="section_title">My Resume</h2>
+        <div class="resume_container container grid">
+          <div class="resume_content grid">
+            <h3 class="resume_subtitle">
+              <i class="ri-award-fill"></i>
+              <span>Experience</span>
+            </h3>
+            <div class="resume_list grid">
+              <div class="resume_data">
+                <h3 class="resume_title">Full-Stack Web Developer</h3>
+
+                <div class="resume_info">
+                  <address>Personal Projects</address>
+                  <address>2023 - Present</address>
+                </div>
+                <p class="resume_description">
+                  Built scalable web apps using Node.js, Express, and modern
+                  databases, focusing on real-time data and user experience.
+                </p>
+              </div>
+
+              <div class="resume_data">
+                <h3 class="resume_title">Machine Learning Developer</h3>
+
+                <div class="resume_info">
+                  <address>Academic Project</address>
+                  <address>2025</address>
+                </div>
+                <p class="resume_description">
+                  Developed CNN-based computer vision systems and distributed
+                  data pipelines for medical and safety use.
+                </p>
+              </div>
+
+              <div class="resume_data">
+                <h3 class="resume_title">Frontend Developer</h3>
+
+                <div class="resume_info">
+                  <address>Portfolio Development</address>
+                  <address>2024-2025</address>
+                </div>
+                <p class="resume_description">
+                  Designed responsive web interfaces and interactive dashboards
+                  using HTML, CSS, and JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume_content grid">
+            <h3 class="resume_subtitle">
+              <i class="ri-graduation-cap-fill"></i>
+              <span>Education</span>
+            </h3>
+            <div class="resume_list grid">
+              <div class="resume_data">
+                <h3 class="resume_title">
+                  Bachelor of Technology - Computer Science Engineering
+                </h3>
+
+                <div class="resume_info">
+                  <address>MIT - WPU, Pune</address>
+                  <address>2023 - 2027</address>
+                </div>
+                <p class="resume_description">
+                  CGPA: 8.49 |
+                  <br />
+                  Pursuing advanced studies in web development, machine
+                  learning, and distributed systems.
+                </p>
+              </div>
+
+              <div class="resume_data">
+                <h3 class="resume_title">Higher Secondary Certificate (XII)</h3>
+
+                <div class="resume_info">
+                  <address>School Name</address>
+                  <address>2023</address>
+                </div>
+                <p class="resume_description">
+                  Percentage: 79% |<br />
+                  Qualified for top engineering programs through competitive
+                  exams.
+                </p>
+              </div>
+
+              <div class="resume_data">
+                <h3 class="resume_title">
+                  Indian Certificate of Secondary Education (X)
+                </h3>
+
+                <div class="resume_info">
+                  <address>North Point School, ICSE</address>
+                  <address>2021</address>
+                </div>
+                <p class="resume_description">
+                  Percentage: 97% |<br />
+                  Demonstrated academic excellence with special recognition in
+                  STEM.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------Contact--------------------->
+      <section class="contact_section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+
+        <div class="contact_container container grid">
+          <form action="" class="contact_form grid" id="contact-form">
+            <input
+              type="text"
+              placeholder="Name"
+              name="user_name"
+              required
+              class="contact_input"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              required
+              class="contact_input"
+            />
+
+            <textarea
+              placeholder="Message"
+              name="user_message"
+              class="contact_input contact_area"
+              required
+            ></textarea>
+            <button type="submit" class="button">Send Message</button>
+            <p class="contact_message" id="contact-message"></p>
+          </form>
+          <div class="contact_content grid">
+            <div class="contact_data grid">
+              <address class="contact_address">
+                <i class="ri-mail-fill"></i>
+                <span>vaidehibhamre7@gmail.com</span>
+              </address>
+
+              <address class="contact_address">
+                <i class="ri-smartphone-fill"></i>
+                <span>+91-8698620875</span>
+              </address>
+
+              <address class="contact_address">
+                <i class="ri-map-pin-line"></i>
+                <span>Pune, Maharashtra</span>
+              </address>
+            </div>
+            <div class="contact_social">
+              <a
+                href="https://wa.me/918698620875"
+                target="_blank"
+                class="contact_link"
+              >
+                <i class="ri-whatsapp-fill"></i>
+              </a>
+              <a
+                href="https://github.com/vaidehi-bhamre"
+                target="_blank"
+                class="contact_link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vaidehi-bhamre-999774371/"
+                target="_blank"
+                class="contact_link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------------Footer-------------------->
+    <footer class="footer">
+      <div class="footer_container container grid">
+        <a href="#" class="footer_logo">Vaidehi</a>
+
+        <div class="footer_links">
+          <a href="#home" class="footer_link">Home</a>
+          <a href="#about" class="footer_link">About</a>
+          <a href="#projects" class="footer_link">Projects</a>
+        </div>
+
+        <div class="footer_social">
+          <a
+            href="https://wa.me/918698620875"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-whatsapp-fill"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/vaidehi_bhamre?igsh=MTJoa3N3dXMxYnlubw%3D%3D&utm_source=qr"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vaidehi-bhamre-999774371/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+        </div>
+      </div>
+      <span class="footer_copy">
+        &#169; All Rights Reserved By Vaidehi Bhamre
+      </span>
+    </footer>
+    <!-------------------- Email JS ------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-------------------- SCROLL UP------------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    <!-------------------- SCROLL REVEAL--------------------->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <!---------------------Typed JS-------------------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"
+      integrity="sha512-MzkTUQKzHBkhWDcz2CVCP1GBbj8NPlpVW4oZrvc4//GFLiXmBno2yb6C9Cb0POuO4jpQrmxMLYKCuMJN7XDcBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!----------------------Main JS-------------------------->
+    <script src="js/main.js"></script>
+  </body>
+</html>
